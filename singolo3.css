@@ -101,3 +101,77 @@ textarea::placeholder {
     color: #f48c8f;
     font-weight: 400;
 }
+
+.button {
+    width: 100px;
+    height: 30px;
+    background-color: #d6564f;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #f0d8d9;
+    font-family: "Lato-Light";
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #d13e36;
+}
+
+.button:active {
+    background-color: #d13e36;
+    box-shadow: 0 0 10px #9ecaed;
+    color: #ffffff;
+}
+
+.contact-content {
+    padding-left: 20px;
+    margin-top: -6px;
+}
+
+.contact-content h2 {
+    font-family: "Lato-Black";
+    font-size: 18px;
+    color: #f0d8d9;
+    letter-spacing: 0.15px;
+}
+
+.contact-content p {
+    padding-top: 8px;
+    text-align: justify;
+    font-family: "Lato-Regular";
+    font-size: 12px;
+    line-height: 21.6px;
+    word-spacing: -0.8px;
+    color: #f0d8d9;
+}
+
+.contact-info {
+    margin-top: 22px;
+}
+
+.contact-info p {
+    padding-top: 0;
+}
+
+.contact-info__data__coordinates::before {
+    margin-left: 4px;
+    content: url(/assets/icons/location.png);
+}
+
+.contact-info__data__phone::before {
+    margin-left: 2px;
+    content: url(/assets/icons/ico-phone.png);
+}
+
+.contact-info__data__mail::before {
+    margin-left: 1px;
+    content: url(/assets/icons/mail.png);
+}
+
+.contact-info a {
+    margin-left: 13px;
+    text-decoration: none;
+    font-family: "Lato-Regular";
+    font-size: 12px;
+    color: #f0d8d9;
+}
