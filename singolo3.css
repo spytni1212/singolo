@@ -175,3 +175,19 @@ textarea::placeholder {
     font-size: 12px;
     color: #f0d8d9;
 }
+
+.footer{
+    height: 76px;
+    background-color: #2d303a;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.social-links {
+    margin-top: 4px;
+}
