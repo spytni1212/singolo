@@ -90,6 +90,7 @@ textarea {
     height: 198px;
     background-color: #d6564f;
     border: none;
+    resize: none;
     border-radius: 5px; 
 }
 
