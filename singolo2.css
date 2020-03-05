@@ -44,7 +44,7 @@ body {
 }
 
 .portfolio h1 {
-    padding-top: 60px;
+    padding-top: 59px;
     font-family: "Lato-Black";
     font-size: 30.5px;
     color: #666d89;
@@ -58,8 +58,7 @@ body {
     color: #767e9e;
 }
 .portfolio__buttons {
-    margin-top: 15.5px;
-    margin-left: 1px;
+    margin: 16px 0 0 1px;
 }
 
 .portfolio__buttons a {
@@ -81,15 +80,14 @@ body {
 .works_previews {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 4px;
+    padding-top: 5px;
     margin-left: -20px;
     
     
 }
 
 .work_preview {
-    margin-top: 17px;
-    margin-left: 20px;
+    margin: 17px 0 0 20px;
 }
 
 .about_us {
@@ -142,7 +140,7 @@ body {
 }
 
 .about_us .person__card p {
-    padding-top: 7.5px;
+    padding-top: 8px;
     font-family: "Lato-Regular";
     text-align: justify;
     font-size: 12px;
@@ -153,4 +151,8 @@ body {
 
 .social_links {
     padding-top: 23px;
+    margin-left: -1px;
+}
+.social_links img {
+    margin-left: 1px;
 }
