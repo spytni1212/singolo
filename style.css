@@ -82,13 +82,18 @@ body {
     text-align: left;
 }
 
-.navigation a {
+.navigation li a {
     text-decoration: none;
-    color:white;
+    color: inherit;
 }
 
-.navigation a:hover {
-    color: #f06c64;
+.navigation a.active {
+    color: #F06C64;
+}
+
+.navigation a:not(.active):hover {
+    cursor: pointer;
+    color: #F06C64;
 }
 
 .header__navigation span {
