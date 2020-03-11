@@ -254,6 +254,17 @@ body {
     margin: 16px 0 0 20px;
 }
 
+.work_preview img {
+    cursor: pointer;
+}
+
+.work_preview img.active {
+    width: 210px;
+    height: 177px;
+    border: 5px solid #F06C64;
+
+}
+
 .work_preview:nth-child(1n + 13) {
     display: none;
 }
