@@ -227,8 +227,8 @@ body {
     margin: 16px 0 0 1px;
 }
 
-.portfolio__buttons a {
-    text-decoration: none;
+.portfolio__button {
+    cursor: pointer;
     font-size: 12px;
     font-family: "Lato-Regular";
     color: #666d89;
@@ -238,7 +238,12 @@ body {
     margin-right: 6px;
 }
 
-.portfolio__buttons a:hover {
+.portfolio__button.active {
+    border: 1px solid #cccccc;
+    color: #cccccc;
+}
+
+.portfolio__button:not(.active):hover {
     border: 1px solid #cccccc;
     color: #cccccc;
 }
