@@ -121,11 +121,24 @@ body {
 
 .phone-vertical {
     margin: -5px 0 0 -17px;
+    cursor: pointer;
 }
 
 .phone-horizontal {
     margin: -6px -18px 0 0;
+    cursor: pointer;
     }
+
+.phone-horizontal-black {
+    margin: -7px -17px 0 0;
+    content: url("./assets/icons/iPhone Horizontal black.png");
+}
+
+.phone-vertical-black {
+    margin: -5px 0 0 -19px;
+    cursor: pointer;
+    content: url("./assets/icons/iPhone Vertical black.png");
+}
 
 .our-services {
     height: 494px;

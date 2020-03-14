@@ -53,3 +53,25 @@ closeButton.addEventListener('click', () => {
 });
 
 
+const phoneVertical = document.getElementById('phone-vertical');
+const phoneHorizontal = document.getElementById('phone-horizontal');
+
+phoneVertical.addEventListener('click', (event) => {
+    if(phoneVertical.classList.contains('phone-vertical')) {
+        phoneVertical.classList.remove('phone-vertical');
+        phoneVertical.classList.add('phone-vertical-black')
+    } else {
+        phoneVertical.classList.remove('phone-vertical-black');
+        phoneVertical.classList.add('phone-vertical');
+    }
+})
+
+phoneHorizontal.addEventListener('click', (event) => {
+    if(phoneHorizontal.classList.contains('phone-horizontal')) {
+        phoneHorizontal.classList.remove('phone-horizontal');
+        phoneHorizontal.classList.add('phone-horizontal-black')
+    } else {
+        phoneHorizontal.classList.remove('phone-horizontal-black');
+        phoneHorizontal.classList.add('phone-horizontal');
+    }
+})
