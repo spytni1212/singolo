@@ -75,3 +75,71 @@ phoneHorizontal.addEventListener('click', (event) => {
         phoneHorizontal.classList.add('phone-horizontal');
     }
 })
+
+
+
+
+let items = document.querySelectorAll('.slide');
+let currentItem = 0;
+let isEnabled = true;
+
+const BG = document.querySelectorAll('section.slider');
+
+
+function changeCurrentItem(n) {
+    currentItem = (n + items.length) % items.length;
+}
+
+function hideItem(direction) {
+    isEnabled = false;
+    items[currentItem].classList.add(direction);
+    items[currentItem].addEventListener('animationend', function() {
+        this.classList.remove('active', direction);
+    });
+}
+
+function showItem(direction) {
+    items[currentItem].classList.add('next', direction);
+    items[currentItem].addEventListener('animationend', function() {
+        this.classList.remove('next', direction);
+        this.classList.add('active');
+        isEnabled = true;
+    });
+}
+
+function previousItem(n) {
+    hideItem('to-right');
+    changeCurrentItem(n - 1);
+    showItem('from-left');
+    if (currentItem === 1) {
+        document.getElementById('slider').classList.add('slider-blue');
+    } else {
+        document.getElementById('slider').classList.remove('slider-blue');
+    };
+};
+
+function nextItem(n) {
+    hideItem('to-left');
+    changeCurrentItem(n + 1);
+    showItem('from-right');
+    if (currentItem === 1) {
+        document.getElementById('slider').classList.add('slider-blue');
+    } else {
+        document.getElementById('slider').classList.remove('slider-blue');
+    };
+};
+
+
+
+document.querySelector('.slider__arrows.left').addEventListener('click', function(){
+    if (isEnabled) {
+        previousItem(currentItem);
+    }
+}); 
+
+document.querySelector('.slider__arrows.right').addEventListener('click', function(){
+    if (isEnabled) {
+        nextItem(currentItem);
+    }
+}); 
+
