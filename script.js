@@ -9,7 +9,6 @@ MENU.addEventListener('click', (event) => {
     event.target.classList.add('active');
 });
 
-
 WORKS.addEventListener('click', (event) => {
     WORKS.querySelectorAll('img').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active');
