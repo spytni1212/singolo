@@ -31,8 +31,8 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    width: 1020px;
+.wrapper {
+    max-width: 1020px;
     padding: 0;
     margin: 0 auto; 
 }
@@ -260,6 +260,7 @@ animation-name: left;
     padding-top: 27px;
     font-size: 17px;
     color: #767e9e;
+    text-align: justify;
     font-family: "Lato-Light";
     line-height: 30px;
     font-weight: 300;
@@ -318,12 +319,6 @@ animation-name: left;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
     scroll-margin-top: 30px;
-}
-
-.portfolio .wrapper {
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .portfolio h1 {
@@ -399,11 +394,6 @@ animation-name: left;
     scroll-margin-top: 30px;
 }
 
-.about_us .wrapper {
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .about_us h1 {
     padding-top: 59px;
@@ -490,6 +480,7 @@ animation-name: left;
 .get-a-quote p {
     padding-top: 18px;
     font-family: "Lato-Light";
+    text-align: justify;
     font-size: 18px;
     color: #f0d8d9;
     line-height: 30px;
@@ -677,4 +668,91 @@ textarea::placeholder {
 }
 .social-links {
     margin-top: 4px;
+}
+
+@media (min-width: 768px) and (max-width: 1019px) {
+    
+    .wrapper {
+        margin: 0 20px;
+        width: auto;
+    }
+
+    
+    .slider {
+        height: 451px;
+    }
+    
+    .slide1 {
+        margin-left: 10px;
+    }
+
+    .slide-picture {
+        height: 364px;
+    }
+
+    .phone-vertical {
+        width: 181px;
+        height: 364px;
+        top: 40px;
+        left: 84px;
+    }
+
+    .phone-horizontal {
+        width: 364px;
+        height: 181px;
+        top: 133px;
+        right: 84px;
+    }
+
+    .phone-horizontal-black {
+        width: 364px;
+        height: 181px;
+        top: 133px;
+        right: 84px;
+    }
+    
+    .phone-vertical-black {
+        width: 181px;
+        height: 364px;
+        top: 40px;
+        left: 84px;
+    }
+
+    .slider__arrows {
+        padding-top: 230px;
+    }
+
+    .our-services {
+        height: 675px;
+    }
+
+    .portfolio {
+        height: 1102px;
+    }
+
+    
+
+    .person__card {
+        width: 218px;
+    }
+
+    .person__card .photo {
+        height: 218px;
+        width: 218px;
+        
+    }
+
+    .get-a-quote {
+        height: 631px;
+    }
+
+    form input {
+        width: 100%;
+    }
+    
+    textarea {
+        width: 442px;
+        height: 159px;
+    }
+    
 }
