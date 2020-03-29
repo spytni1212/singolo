@@ -730,8 +730,6 @@ textarea::placeholder {
         height: 1102px;
     }
 
-    
-
     .person__card {
         width: 218px;
     }
@@ -754,5 +752,150 @@ textarea::placeholder {
         width: 442px;
         height: 159px;
     }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
     
+    .wrapper {
+        margin: 0 20px;
+        width: auto;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .header .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider {
+        height: 220px;
+    }
+
+    .slide1 {
+        margin-top: 20px;
+    }
+     
+    .phone-vertical {
+        top: 40px;
+        left: 45px;
+        width: 88px;
+        height: 177px;
+    }
+    
+    .phone-horizontal {
+        top: 85px;
+        right: 35px;
+        width: 177px;
+        height: 88px;
+        margin-left: 15px;
+    }
+
+    .phone-vertical-black {
+        top: 40px;
+        left: 45px;
+        width: 88px;
+        height: 177px;
+    }
+
+    .phone-horizontal-black {
+        top: 85px;
+        right: 35px;
+        width: 177px;
+        height: 88px;
+        margin-left: 15px;
+    }
+   
+    .slider__arrows {
+        padding-top: 100px;
+    }
+
+    .slide-picture {
+        height: 177px;
+        padding-top: 30px;
+        padding-left: 60px;
+    }
+
+    .our-services {
+        height: 1033px;
+    }
+    
+    .our-services h1 {
+        padding-top: 33px;
+    }
+
+    .works_previews {
+        margin-left: -13px;
+    }
+
+    .works_previews img {
+        width: 151px;
+        height: 128px;
+    }
+
+    .work_preview {
+        margin: 16px 0 0 13px;
+    }
+
+    .work_preview:nth-child(1n + 9) {
+        display: none;
+    }
+
+    .about_us {
+        height: 1755px;
+    }
+
+    .about_us h1 {
+        padding-top: 40px;
+    }
+
+    .persons {
+        padding-top: 0;
+    }
+
+    .persons__cards {
+        display: inline;
+    }
+
+    .person__card {
+        margin-top: 35px;
+        margin-left: 0;
+    }
+
+    .social_links {
+        padding-top: 10px;
+    }
+
+    .get-a-quote {
+        height: 969px;
+    }
+
+    .layout-2-column {
+        display: inline;
+    }
+
+    input, textarea {
+        width: 315px;
+    }
+
+    form {
+        padding-top: 30px;
+    }
+
+    .contact-content {
+        padding-left: 0;
+        padding-top: 32px;
+    }
+
+    .footer .wrapper p {
+        display: none;
+    }
+
+    .footer .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
 }
